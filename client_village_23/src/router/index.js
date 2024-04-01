@@ -9,6 +9,17 @@ const routes = [
     name: "MainPage",
     component: () => import("../views/MainPage.vue"),
   },
+  {
+    path: "/news",
+    name: "NewsPage",
+    component: () => import("../views/NewsPage.vue"),
+  },
+  {
+    path: "/new/:newSlug",
+    name: "NewPage",
+    component: () => import("../views/NewPage.vue"),
+    props: true,
+  }
 ]
 
 const router = new VueRouter({

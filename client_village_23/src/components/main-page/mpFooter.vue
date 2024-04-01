@@ -4,7 +4,7 @@
     <router-link to="/" style="padding-top: 10px">Главная</router-link>
     <router-link to="/" style="padding-top: 10px">Забронировать</router-link>
     <router-link to="/" style="padding-top: 10px">Для жильцов</router-link>
-    <router-link to="/" style="padding-top: 10px">Новости</router-link>
+    <router-link to="/news" style="padding-top: 10px">Новости</router-link>
     <router-link to="/" style="padding-top: 10px">Контакты</router-link>
   </div>
 </template>
