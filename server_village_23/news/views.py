@@ -18,9 +18,9 @@ class AllNews(APIView):
 
 
 class LatestNews(APIView):
-    """Получение последних двух новостей"""
+    """Получение последних трех новостей"""
 
     def get(self, request, format=None):
-        news = News.objects.all()[0:2]
+        news = News.objects.all()[0:3]
         serializer = NewsSerializers(news, many=True)
         return Response(serializer.data)
