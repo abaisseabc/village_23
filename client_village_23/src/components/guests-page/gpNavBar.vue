@@ -1,5 +1,5 @@
 <template>
-  <div class="main-page_footer">
+  <div class="guests-page_navbar">
     <router-link to="/" class="main-page_footer__village" style="font-size: 20px;">Village</router-link>
     <router-link to="/" style="padding-top: 10px">Главная</router-link>
     <router-link to="/booking" style="padding-top: 10px">Забронировать</router-link>
@@ -11,6 +11,10 @@
 
 <script>
 export default {
-  name: "mpFooter",
+  name: "gpNavBar"
 }
 </script>
+
+<style scoped lang="scss">
+
+</style>

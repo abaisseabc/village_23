@@ -24,7 +24,17 @@ const routes = [
     path: "/contact",
     name: "ContactPage",
     component: () => import("../views/ContactPage.vue"),
-  }
+  },
+  {
+    path: "/guests",
+    name: "GuestsPage",
+    component: () => import("../views/GuestsPage.vue"),
+  },
+  {
+    path: "/booking",
+    name: "BookingPage",
+    component: () => import("../views/BookingPage.vue"),
+  },
 ]
 
 const router = new VueRouter({

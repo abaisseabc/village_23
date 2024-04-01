@@ -14,7 +14,7 @@
         <input type="date">
       </div>
       <div class="main-page_banner__booking_link">
-        <router-link to="/">Забронировать</router-link>
+        <router-link to="/booking">Забронировать</router-link>
       </div>
     </div>
 
