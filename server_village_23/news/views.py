@@ -24,3 +24,10 @@ class LatestNews(APIView):
         news = News.objects.all()[0:3]
         serializer = NewsSerializers(news, many=True)
         return Response(serializer.data)
+
+
+class NewDetail(APIView):
+    def get(self, request, new_slug, format=None):
+        new = News.objects.get(slug=new_slug)
+        serializer = NewsSerializers(new)
+        return Response(serializer.data)
