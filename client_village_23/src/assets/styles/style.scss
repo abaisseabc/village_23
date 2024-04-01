@@ -3,7 +3,298 @@
 
 body, html {
   background: $color-white;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  font-family: "SuisseIntl-Regular";
+}
+
+.main-page_banner__navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.main-page_banner__navbar_village {
+  margin-right: 600px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "SuisseIntl-Light";
+}
+
+.main-page_banner__navbar a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.main-page_banner__navbar a:hover {
+  color: $color-white;
+  text-decoration: underline;
+}
+
+.main-page_banner__navbar a:focus {
+  color: $color-white;
+  text-decoration: underline;
+}
+
+.main-page_banner__header {
+  text-align: center;
+  color: $color-white;
+  margin-top: 150px;
+  font-weight: 300;
+  font-size: 92px;
+  margin-bottom: 100px;
+}
+
+.main-page_banner__booking {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.main-page_banner__booking input {
+  width: 529px;
+  height: 87px;
+  backdrop-filter: blur(36.599998474121094px);
+  background: rgba(28, 28, 28, 0.36);
+  color: $color-white;
+  border: none;
+  padding: 20px;
+}
+
+.main-page_banner__booking input:focus {
+  text-decoration: none;
+  border: none;
+}
+
+.main-page_banner__booking input:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.main-page_banner__booking_link {
+  width: 222px;
+  height: 87px;
+  backdrop-filter: blur(36.599998474121094px);
+  background: rgba(28, 28, 28, 0.36);
+  text-align: center;
+  padding: 30px;
+}
+
+.main-page_banner__booking a {
+  text-align: center;
+  color: $color-white;
+  border: none;
+  text-decoration: none;
+}
+
+.main-page_banner__booking a:hover {
+  text-decoration: underline;
+}
+
+.main-page_description__header {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 76px;
+  line-height: 110%;
+}
+
+.main-page_description__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.main-page_description__content_main {
+  margin-left: 150px;
+}
+
+.main-page_description__content_main_desc {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2b2b2b;
+}
+
+.main-page_description__content_main_imgs {
+  margin-top: 100px;
+}
+
+.main-page_description__content_main_link a {
+  color: $color-black;
+  font-weight: 450;
+  font-size: 15px;
+}
+
+.main-page_rooms {
+  margin: 100px;
+}
+
+.main-page_rooms__room {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.main-page_rooms__room__type_rus {
+  font-weight: 400;
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+}
+
+.main-page_rooms__room__type {
+  font-weight: 400;
+  font-size: 56px;
+  color: $color-black;
+  margin-bottom: 20px;
+}
+
+.main-page_rooms__room__description {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 40px;
+  width: 600px;
+}
+
+.main-page_rooms__room__parameters {
+  margin-bottom: 20px;
+}
+
+.main-page_rooms__room__parameters_label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-bottom: 5px;
+}
+
+.main-page_rooms__room__parameters_parameter {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-page_rooms__room__booking {
+  margin-top: 80px;
+}
+
+.main-page_rooms__room__booking a {
+  color: $color-black;
+  font-weight: 450;
+  font-size: 16px;
+}
+
+.main-page_news {
+  margin: 100px;
+}
+
+.main-page_news__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.main-page_news__header_title {
+  font-weight: 400;
+  font-size: 52px;
+}
+
+.main-page_news__header_link {
+  width: 92px;
+  height: 25px;
+  padding-top: 30px;
+}
+
+.main-page_news__header_link a {
+  font-weight: 450;
+  font-size: 15px;
+  color: $color-black;
+}
+
+.main-page_news__news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page_news__news_new {
+  margin-right: 10px;
+}
+
+.main-page_news__news_new img {
+  height: 346px;
+  width: 650px;
+}
+
+.main-page_news__news_new h1 {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.main-page_news__news_new p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #434343;
+}
+
+.main-page_contacts {
+  margin: 100px;
+}
+
+.main-page_contacts__header {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+}
+
+.main-page_contacts__data {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page_contacts__data_info_block {
+  margin-bottom: 25px;
+}
+
+.main-page_contacts__data_info_block_label {
+  font-weight: 450;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.main-page_contacts__data_info_block_desc {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-page_footer {
+  margin-top: 40px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+.main-page_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page_footer__village {
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 500px
+}
+
+.main-page_footer a {
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: $color-black;
+}
+
+.main-page_footer a:hover {
+  text-decoration: underline;
 }
