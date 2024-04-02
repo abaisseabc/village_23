@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "rooms",
     "news",
+    "bookings",
 ]
 
 MIDDLEWARE = [
