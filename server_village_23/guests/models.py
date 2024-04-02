@@ -2,6 +2,7 @@ from django.db import models
 
 from rooms.models import Rooms
 
+
 # from ..rooms.models import Rooms
 
 
@@ -18,7 +19,7 @@ class Guest(models.Model):
     check_out_date = models.DateField(verbose_name="Дата выезда")
 
     def __str__(self):
-        return f"Гость {self.first_name} с ID {self.guest_id}, номер - {self.number_room}"
+        return f"{self.guest_id}"
 
     class Meta:
         verbose_name = "Гость"
@@ -30,8 +31,8 @@ class GuestServices(models.Model):
     guest_id_service = models.ForeignKey(Guest, on_delete=models.CASCADE, verbose_name="Id гостя")
     service_name = models.CharField(max_length=255, verbose_name="Услуга")
 
-    def __str__(self):
-        return f"{self.guest_id_service}, услуга - {self.service_name}"
+    # def __str__(self):
+    #     return f"{self.guest_id_service}, услуга - {self.service_name}"
 
     class Meta:
         verbose_name = "Услуга в номер"
