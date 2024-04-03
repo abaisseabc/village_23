@@ -16,7 +16,6 @@ body, html {
 }
 
 .main-page_banner__navbar_village {
-  margin-right: 600px;
   font-weight: 400;
   font-size: 24px;
   font-family: "SuisseIntl-Light";
@@ -217,6 +216,12 @@ body, html {
 .main-page_news__news {
   display: flex;
   justify-content: space-between;
+  color: $color-black;
+}
+
+.main-page_news__news a {
+  text-decoration: none;
+  color: $color-black;
 }
 
 .main-page_news__news_new {
@@ -224,8 +229,8 @@ body, html {
 }
 
 .main-page_news__news_new img {
-  height: 346px;
-  width: 650px;
+  height: 270px;
+  width: 450px;
 }
 
 .main-page_news__news_new h1 {
@@ -342,6 +347,7 @@ body, html {
 
 .new-page__new_data {
   display: flex;
+  justify-content: space-between;
 }
 
 .new-page__new {
@@ -363,12 +369,11 @@ body, html {
   margin-top: 100px;
   font-weight: 400;
   font-size: 64px;
-  margin-right: 600px;
 }
 
 .new-page__new_data__description {
   margin-top: 100px;
-  width: 400px;
+  width: 500px;
   font-weight: 400;
   font-size: 20px;
   line-height: 122%;
@@ -447,7 +452,7 @@ body, html {
   margin-right: 20px;
 }
 
-.guests-page__service input {
+.guests-page__service input, select, option {
   padding-left: 20px;
   min-width: 500px;
   color: $color-white;

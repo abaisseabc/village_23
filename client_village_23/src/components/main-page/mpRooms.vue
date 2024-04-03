@@ -38,7 +38,7 @@
         </div>
 
         <div class="main-page_rooms__room__booking">
-          <router-link to="/">Забронировать</router-link>
+          <router-link to="/booking">Забронировать</router-link>
         </div>
       </div>
 
@@ -88,7 +88,7 @@
         </div>
 
         <div class="main-page_rooms__room__booking">
-          <router-link to="/">Забронировать</router-link>
+          <router-link to="/booking">Забронировать</router-link>
         </div>
       </div>
 

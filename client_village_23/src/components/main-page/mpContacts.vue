@@ -49,7 +49,7 @@
             style="color:#eee;font-size:12px;position:absolute;top:14px;">Гостиница в Краснодаре</a>
           <iframe
               src="https://yandex.ru/map-widget/v1/?ll=38.938114%2C45.047132&mode=search&oid=72641937051&ol=biz&z=18.15"
-              width="1000" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+              width="900" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
         </div>
       </div>
     </div>

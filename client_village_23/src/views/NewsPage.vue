@@ -13,7 +13,7 @@
       >
         <img :src="newItem.get_image">
         <h1>{{ newItem.title }}</h1>
-        <p>{{ newItem.description.slice(0, 50) }}</p>
+        <p>{{ newItem.description.slice(0, 50) }}...</p>
       </router-link>
     </div>
     <mpFooter/>

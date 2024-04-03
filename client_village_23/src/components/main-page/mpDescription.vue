@@ -16,7 +16,7 @@
         </div>
 
         <div class="main-page_description__content_main_link">
-          <router-link to="/">Забронировать</router-link>
+          <router-link to="/booking">Забронировать</router-link>
         </div>
 
         <div class="main-page_description__content_main_imgs">

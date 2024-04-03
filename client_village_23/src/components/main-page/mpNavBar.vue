@@ -1,11 +1,17 @@
 <template>
   <div class="main-page_banner__navbar">
-    <router-link class="main-page_banner__navbar_village" to="/">Village</router-link>
-    <router-link to="/">Главная</router-link>
-    <router-link to="/">Забронировать</router-link>
-    <router-link to="/guests">Для жильцов</router-link>
-    <router-link to="/news">Новости</router-link>
-    <router-link to="/contact">Контакты</router-link>
+    <router-link
+        to="/"
+        class="main-page_footer__village"
+        style="font-size: 20px; font-family: 'SuisseIntl-Light';"
+    >Village
+    </router-link>
+
+    <router-link to="/" style="padding-top: 10px">Главная</router-link>
+    <router-link to="/booking" style="padding-top: 10px">Забронировать</router-link>
+    <router-link to="/guests" style="padding-top: 10px">Для жильцов</router-link>
+    <router-link to="/news" style="padding-top: 10px">Новости</router-link>
+    <router-link to="/contact" style="padding-top: 10px">Контакты</router-link>
   </div>
 </template>
 
