@@ -4,8 +4,8 @@
 
     <div class="new-page__new">
       <div class="new-page__new_data">
-        <div class="new-page__new_data__header"> {{newObject.title}} </div>
-        <div class="new-page__new_data__description">{{newObject.description}}</div>
+        <div class="new-page__new_data__header"> {{ newObject.title }}</div>
+        <div class="new-page__new_data__description">{{ newObject.description }}</div>
       </div>
 
       <div class="new-page__new_img">
@@ -47,7 +47,3 @@ export default {
   },
 }
 </script>
-
-<style scoped lang="scss">
-
-</style>

@@ -9,10 +9,11 @@
     </div>
 
     <div class="main-page_news__news">
-      <router-link class="main-page_news__news_new"
-           v-for="newItem in news"
-           :key="newItem.slug"
-           :to="{ name: 'NewPage', params: { newSlug: newItem.slug }}"
+      <router-link
+          class="main-page_news__news_new"
+          v-for="newItem in news"
+          :key="newItem.slug"
+          :to="{ name: 'NewPage', params: { newSlug: newItem.slug }}"
       >
         <img :src="newItem['get_image']" alt="new photo">
         <h1> {{ newItem["title"] }} </h1>
@@ -33,7 +34,7 @@ export default {
   },
   data() {
     return {
-      news: []
+      news: [],
     }
   },
   methods: {

@@ -14,7 +14,3 @@ export default {
   name: "gpNavBar"
 }
 </script>
-
-<style scoped lang="scss">
-
-</style>
