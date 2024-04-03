@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -27,6 +26,8 @@ class LatestNews(APIView):
 
 
 class NewDetail(APIView):
+    """Получение новости по slug"""
+
     def get(self, request, new_slug, format=None):
         new = News.objects.get(slug=new_slug)
         serializer = NewsSerializers(new)

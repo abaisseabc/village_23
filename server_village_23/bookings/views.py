@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -9,6 +8,8 @@ from .serializers import BookingSerializer
 
 
 class BookingCreateAPIView(APIView):
+    """Создание брони"""
+
     def post(self, request, *args, **kwargs):
         serializer = BookingSerializer(data=request.data)
         if serializer.is_valid():

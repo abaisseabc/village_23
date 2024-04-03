@@ -4,6 +4,8 @@ from django.db import models
 # Create your models here.
 
 class News(models.Model):
+    """Новости"""
+
     title = models.CharField(max_length=255, verbose_name="Заголовок")
     slug = models.SlugField(verbose_name="Имя заголовка на английском")
     description = models.TextField(blank=True, null=True, verbose_name="Описание")

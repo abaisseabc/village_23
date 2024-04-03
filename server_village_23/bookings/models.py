@@ -4,6 +4,8 @@ from django.db import models
 # Create your models here.
 
 class Bookings(models.Model):
+    """Бронь"""
+
     booking_id = models.AutoField(primary_key=True)
     check_in_date = models.DateField(verbose_name="Дата заезда")
     check_out_date = models.DateField(verbose_name="Дата выезда")
