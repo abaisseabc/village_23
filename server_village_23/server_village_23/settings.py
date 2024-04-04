@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "news",
     "bookings",
     "guests",
+    "call_requests",
 ]
 
 MIDDLEWARE = [
