@@ -390,6 +390,7 @@ body, html {
 
 .main-page_contacts__data_info_block__ex__input {
   margin-top: 10px;
+  display: flex;
 }
 
 .main-page_contacts__data_info_block__ex__input input {
@@ -397,6 +398,11 @@ body, html {
   border-bottom: 1px solid #343434;
   width: 362px;
   height: 48px;
+}
+
+.main-page_contacts__data_info_block__ex__input img {
+  margin-left: -20px;
+  cursor: pointer;
 }
 
 .guests-page {

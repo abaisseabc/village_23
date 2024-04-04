@@ -36,7 +36,15 @@
             Остались вопросы? Оставьте заявку <br> и мы скоро свяжемся с вами
           </div>
           <div class="main-page_contacts__data_info_block__ex__input">
-            <input placeholder="Номер телефона">
+            <input
+                placeholder="Номер телефона"
+                v-model="formattedPhoneNumber"
+            >
+            <img
+                src="@/assets/icons/arrow.svg"
+                alt="send request"
+                @click="requestCall"
+            >
           </div>
         </div>
 
@@ -58,7 +66,50 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "mpContacts",
+  data() {
+    return {
+      dataRequestCall: {
+        "phone_number": "",
+      },
+      phoneNumber: "",
+      isValidPhoneNumber: true,
+    }
+  },
+  computed: {
+    formattedPhoneNumber: {
+      get() {
+        return this.phoneNumber;
+      },
+      set(value) {
+        const formattedValue = value.replace(/\D/g, '');
+
+        const formattedNumber = formattedValue.replace(/^(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})$/, '8-$2-$3-$4-$5');
+
+        const regex = /^8-\d{3}-\d{3}-\d{2}-\d{2}$/;
+        this.isValidPhoneNumber = regex.test(formattedNumber);
+
+        this.phoneNumber = formattedNumber;
+      }
+    },
+  },
+  methods: {
+    async requestCall() {
+      if (this.isValidPhoneNumber) {
+        this.dataRequestCall["phone_number"] = this.phoneNumber;
+        await axios
+            .post("http://127.0.0.1:8000/api/v1/call_requests/", this.dataRequestCall)
+            .then(response => {
+              if (response.data.status === 201) {
+                console.log(response.data);
+              }
+            })
+            .catch(err => console.log(err))
+      }
+    },
+  },
 }
 </script>
